@@ -5,7 +5,7 @@ import Container from "../Container/Container";
 
 const Header = () => {
   return (
-    <div className="bg-[#b72b1d] text-white min-h-screen ">
+    <div className="bg-[#b72b1d] text-white min-h-[600px] ">
       <Container>
         <Navbar />
         <Banner />
