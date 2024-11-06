@@ -6,7 +6,13 @@ import Item2 from "../../assets/item2.png";
 import Item3 from "../../assets/item3.png";
 import Item4 from "../../assets/item4.png";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  Mousewheel,
+  Keyboard,
+  Autoplay,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -36,7 +42,8 @@ const PopularItem = () => {
             mousewheel={true}
             slidesPerView={4}
             keyboard={true}
-            modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
             className="mySwiper relative"
           >
             <SwiperSlide>
@@ -82,6 +89,14 @@ const PopularItem = () => {
                 <h1 className="font-bold uppercase text-lg">
                   Vegetable Burger
                 </h1>
+                <h2>Barbecue Italian cuisine pizza</h2>
+              </div>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
+                <img src={Item2} alt="" className="h-[100px]" />
+                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                <h1 className="font-bold uppercase text-lg">Hot Pizza</h1>
                 <h2>Barbecue Italian cuisine pizza</h2>
               </div>
             </SwiperSlide>

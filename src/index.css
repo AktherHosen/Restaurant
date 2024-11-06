@@ -53,3 +53,9 @@ body {
   padding: 10px;
   border-radius: 50%;
 }
+
+.bookContainer {
+  background-image: url("./assets/booktablebanner.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
