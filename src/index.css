@@ -59,3 +59,29 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.footerContainer {
+  position: relative;
+  background-image: url("./assets/footerbg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footerContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+  z-index: 1;
+}
+
+.footerContainer > * {
+  position: relative;
+  z-index: 2; /* Ensure that content stays above the overlay */
+  color: white;
+  opacity: 90%;
+}
