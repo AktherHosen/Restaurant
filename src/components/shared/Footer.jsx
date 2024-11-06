@@ -18,25 +18,25 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             <div className="flex flex-col justify-center items-center gap-1">
               <FaRegClock className="text-[#FEBF00] text-2xl font-bold mb-4" />
-              <h1 className="uppercase text-xl">Opening hours</h1>
+              <h1 className="uppercase text-xl font-semibold">Opening hours</h1>
               <h2>Monday - Sunday</h2>
               <h2>9:00 AM to 11:30 PM</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-1">
               <FiPhoneCall className="text-[#FEBF00] text-2xl font-bold mb-4" />
-              <h1 className="uppercase text-xl">LET'S TALK</h1>
+              <h1 className="uppercase text-xl font-semibold">LET'S TALK</h1>
               <h2>Phone: 1-800-222-4545</h2>
               <h2>Fax: 1-800-222-4545</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-1">
               <GoMail className="text-[#FEBF00] text-2xl font-bold mb-4" />
-              <h1 className="uppercase text-xl">BOOK A TABLE</h1>
+              <h1 className="uppercase text-xl font-semibold">BOOK A TABLE</h1>
               <h2>Email: demo@website.com</h2>
               <h2>Support: support@website.com</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-1">
               <SlLocationPin className="text-[#FEBF00] text-2xl font-bold mb-4" />
-              <h1 className="uppercase text-xl">Our Address</h1>
+              <h1 className="uppercase text-xl font-semibold">Our Address</h1>
               <h2>123 Stree New York City , United </h2>
               <h2>States Of America.</h2>
             </div>

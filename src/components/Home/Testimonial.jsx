@@ -26,7 +26,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="py-10 relative overflow-hidden ">
+    <div className="p-10 lg:relative ">
       <Container>
         <div className="text-primary flex items-center gap-1">
           <span className="block"> ■</span>{" "}
@@ -36,7 +36,7 @@ const Testimonial = () => {
           What Some of my Customers Say
         </h1>
 
-        <div className="relative my-8 h-[400px]">
+        <div className="relative my-8 min-h-[400px]">
           <Swiper
             cssMode={true}
             navigation={{
@@ -51,9 +51,9 @@ const Testimonial = () => {
             className="relative"
           >
             <SwiperSlide>
-              <div className="flex">
-                <div className="w-1/3 bg-[#FEBF00] relative">
-                  <div className="px-10 py-12 space-y-28 max-w-md">
+              <div className="flex flex-col-reverse lg:flex-row">
+                <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
+                  <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                     <div className="relative">
                       <h2 className="text-sm leading-6 tracking-wide text-start">
                         You can't go wrong with Chicken Mandi, I had it twice.
@@ -85,13 +85,13 @@ const Testimonial = () => {
                     <img src={Flower} alt="Flower Icon" className="h-16" />
                   </div>
                 </div>
-                <div className="w-2/3 relative">
+                <div className="w-full lg:w-2/3 relative">
                   {!isPlaying ? (
                     <div className="relative">
                       <img
                         src={Thumbnail}
                         alt="Video Thumbnail"
-                        className="w-full object-cover h-[400px]"
+                        className="w-full object-cover h-[300px] lg:h-[400px]"
                       />
                       <button
                         onClick={playVideo}
@@ -105,16 +105,16 @@ const Testimonial = () => {
                       id="myVideo"
                       src={Movie}
                       controls
-                      className="w-full object-cover h-[400px]"
+                      className="w-full object-cover h-[300px] lg:h-[400px]"
                     />
                   )}
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex">
-                <div className="w-1/3 bg-[#FEBF00] relative">
-                  <div className="px-10 py-12 space-y-28 max-w-md">
+              <div className="flex flex-col-reverse lg:flex-row">
+                <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
+                  <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                     <div className="relative">
                       <h2 className="text-sm leading-6 tracking-wide text-start">
                         You can't go wrong with Chicken Mandi, I had it twice.
@@ -131,9 +131,9 @@ const Testimonial = () => {
                     <div className="flex justify-between items-center">
                       <div className="text-start flex-1">
                         <h1 className="text-sm font-semibold uppercase">
-                          Salim Al Dawsry
+                          Khalid Al Dawsry
                         </h1>
-                        <h4 className="text-sm">Abha, Saudi</h4>
+                        <h4 className="text-sm">Jeddah, Saudi</h4>
                         <div className="h-[0.5px] bg-black mt-1.5"></div>
                       </div>
                       <div>
@@ -146,13 +146,13 @@ const Testimonial = () => {
                     <img src={Flower} alt="Flower Icon" className="h-16" />
                   </div>
                 </div>
-                <div className="w-2/3 relative">
+                <div className="w-full lg:w-2/3 relative">
                   {!isPlaying ? (
                     <div className="relative">
                       <img
                         src={Thumbnail}
                         alt="Video Thumbnail"
-                        className="w-full object-cover h-[400px]"
+                        className="w-full object-cover h-[300px] lg:h-[400px]"
                       />
                       <button
                         onClick={playVideo}
@@ -166,16 +166,16 @@ const Testimonial = () => {
                       id="myVideo"
                       src={Movie}
                       controls
-                      className="w-full object-cover h-[400px]"
+                      className="w-full object-cover h-[300px] lg:h-[400px]"
                     />
                   )}
                 </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="flex">
-                <div className="w-1/3 bg-[#FEBF00] relative">
-                  <div className="px-10 py-12 space-y-28 max-w-md">
+              <div className="flex flex-col-reverse lg:flex-row">
+                <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
+                  <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                     <div className="relative">
                       <h2 className="text-sm leading-6 tracking-wide text-start">
                         You can't go wrong with Chicken Mandi, I had it twice.
@@ -192,9 +192,9 @@ const Testimonial = () => {
                     <div className="flex justify-between items-center">
                       <div className="text-start flex-1">
                         <h1 className="text-sm font-semibold uppercase">
-                          Altaf Al Dawsry
+                          Khalid Al Dawsry
                         </h1>
-                        <h4 className="text-sm">Al Ain, Saudi</h4>
+                        <h4 className="text-sm">Jeddah, Saudi</h4>
                         <div className="h-[0.5px] bg-black mt-1.5"></div>
                       </div>
                       <div>
@@ -207,13 +207,13 @@ const Testimonial = () => {
                     <img src={Flower} alt="Flower Icon" className="h-16" />
                   </div>
                 </div>
-                <div className="w-2/3 relative">
+                <div className="w-full lg:w-2/3 relative">
                   {!isPlaying ? (
                     <div className="relative">
                       <img
                         src={Thumbnail}
                         alt="Video Thumbnail"
-                        className="w-full object-cover h-[400px]"
+                        className="w-full object-cover h-[300px] lg:h-[400px]"
                       />
                       <button
                         onClick={playVideo}
@@ -227,7 +227,7 @@ const Testimonial = () => {
                       id="myVideo"
                       src={Movie}
                       controls
-                      className="w-full object-cover h-[400px]"
+                      className="w-full object-cover h-[300px] lg:h-[400px]"
                     />
                   )}
                 </div>
@@ -236,7 +236,7 @@ const Testimonial = () => {
           </Swiper>
 
           <div
-            className={`swiper-button-next-custom shadow-sm border absolute -top-16 right-2 z-10 ${
+            className={`swiper-button-next-custom shadow-sm border absolute right-52 lg:-top-16 lg:right-2 z-10 mt-4 ${
               activeNav === "next" ? "text-primary" : "text-black"
             }`}
             onClick={() => setActiveNav("next")}
@@ -244,7 +244,7 @@ const Testimonial = () => {
             <FaArrowRight />
           </div>
           <div
-            className={`swiper-button-prev-custom shadow-sm border absolute -top-16 right-12 z-10 ${
+            className={`swiper-button-prev-custom shadow-sm border absolute right-40 lg:-top-16 lg:right-12 z-10 mt-4 ${
               activeNav === "prev" ? "text-primary" : "text-black"
             }`}
             onClick={() => setActiveNav("prev")}
@@ -252,10 +252,10 @@ const Testimonial = () => {
             <FaArrowLeft />
           </div>
         </div>
-        <div className="absolute left-0 top-20">
+        <div className="hidden lg:flex lg:absolute left-0 top-20">
           <img src={TestimonialImg1} className="h-48" alt="Testimonial Dish" />
         </div>
-        <div className="absolute right-0 bottom-0">
+        <div className="hidden lg:flex lg:absolute right-0 bottom-0">
           <img src={TestimonialImg2} className="h-80" alt="Testimonial Tree" />
         </div>
       </Container>
