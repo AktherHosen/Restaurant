@@ -5,7 +5,6 @@ import StarImg from "../../assets/star.png";
 const Banner = () => {
   return (
     <div className="container mx-auto flex items-center h-[calc(100vh-80px)] relative">
-      {/* Text Section */}
       <div className="space-y-4 relative z-20 rounded-lg lg:-mr-20">
         <h1 className="text-4xl lg:text-6xl font-bold tracking-wider text-white bg-[#b72b1d] bg-opacity-50 inline-block  py-4 pr-4">
           TASTE THE AUTHENTIC <br /> SAUDI CUISINE
@@ -17,7 +16,6 @@ const Banner = () => {
         <PrimaryButton label={"EXPLORE MENU"} />
       </div>
 
-      {/* Image Section */}
       <div className="lg:w-1/2 hidden lg:block relative -ml-12 w-full">
         <img
           src={BannerImg}
