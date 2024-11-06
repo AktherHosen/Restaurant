@@ -23,7 +23,7 @@ const PopularItem = () => {
   const [activeNav, setActiveNav] = useState("next");
 
   return (
-    <div className="bg-[#FBF7F2] min-h-[400px] py-10 relative">
+    <div className="bg-[#FBF7F2] min-h-[400px] p-10 lg:relative">
       <Container>
         <div className="text-primary flex items-center gap-1">
           <span className="block"> ■</span>{" "}
@@ -31,7 +31,7 @@ const PopularItem = () => {
         </div>
         <h1 className="font-bold uppercase text-2xl">Popular food items</h1>
 
-        <div className="relative my-8">
+        <div className="relative flex flex-col lg:flex-row my-8">
           <Swiper
             cssMode={true}
             navigation={{
@@ -40,70 +40,106 @@ const PopularItem = () => {
             }}
             spaceBetween={30}
             mousewheel={true}
-            slidesPerView={4}
+            slidesPerView={1}
             keyboard={true}
             autoplay={{ delay: 2000, disableOnInteraction: false }}
             modules={[Navigation, Pagination, Mousewheel, Keyboard, Autoplay]}
+            breakpoints={{
+              1024: {
+                slidesPerView: 2,
+              },
+              1420: {
+                slidesPerView: 4,
+              },
+            }}
             className="mySwiper relative"
           >
             <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item1} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">
-                  Vegetables burger
-                </h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item1} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">
+                    Vegetables burger
+                  </h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item2} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">Spacial Pizza</h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item2} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">Spacial Pizza</h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item3} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">
-                  Spacial French fries
-                </h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item3} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">
+                    Spacial French fries
+                  </h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item4} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">
+                    Cuisine Chicken
+                  </h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item1} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">
+                    Vegetables burger
+                  </h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item4} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">Cuisine Chicken</h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item1} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">
-                  Vegetable Burger
-                </h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="min-h-[200px] p-4 w-[300px] bg-white flex flex-col items-center justify-center text-center gap-y-1">
-                <img src={Item2} alt="" className="h-[100px]" />
-                <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
-                <h1 className="font-bold uppercase text-lg">Hot Pizza</h1>
-                <h2>Barbecue Italian cuisine pizza</h2>
+              <div className="min-h-[200px] min-w-[300px]  p-4 bg-white">
+                <div className="flex justify-center items-center flex-col">
+                  <div>
+                    <img src={Item2} alt="" className="h-[100px]" />
+                  </div>
+                  <div className="w-[60px] h-1 mx-auto bg-primary my-3"></div>
+                  <h1 className="font-bold uppercase text-lg">Hot Pizza</h1>
+                  <h2>Barbecue Italian cuisine pizza</h2>
+                </div>
               </div>
             </SwiperSlide>
           </Swiper>
 
           <div
-            className={`swiper-button-next-custom absolute -top-16 right-2 z-10 ${
+            className={`swiper-button-next-custom shadow-sm border absolute -bottom-14 right-52 lg:-top-16 lg:right-2 z-10 mt-4 h-10 w-10 flex items-center justify-center ${
               activeNav === "next" ? "text-primary" : "text-black"
             }`}
             onClick={() => setActiveNav("next")}
@@ -111,7 +147,7 @@ const PopularItem = () => {
             <FaArrowRight />
           </div>
           <div
-            className={`swiper-button-prev-custom absolute -top-16 right-12 z-10 ${
+            className={`swiper-button-prev-custom shadow-sm border absolute -bottom-14 right-40 lg:-top-16 lg:right-12 z-10 mt-4 h-10 w-10 flex items-center justify-center ${
               activeNav === "prev" ? "text-primary" : "text-black"
             }`}
             onClick={() => setActiveNav("prev")}
@@ -121,7 +157,7 @@ const PopularItem = () => {
         </div>
       </Container>
 
-      <div className="absolute left-0 top-44">
+      <div className="hidden lg:flex lg:absolute left-0 top-44">
         <img src={PopularBg} className="h-48" alt="" />
       </div>
     </div>

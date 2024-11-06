@@ -4,9 +4,9 @@ import "../../index.css";
 import PrimaryButton from "../Button/PrimaryButton";
 const BookTable = () => {
   return (
-    <div className="py-10  bookContainer">
+    <div className="p-10  bookContainer">
       <Container>
-        <div className="max-w-2xl flex min-h-[400px] justify-center items-center">
+        <div className="max-w-2xl flex min-h-[500px] justify-center items-center">
           <div className="space-y-2">
             <div className="text-primary flex items-center gap-1">
               <span className="block"> ■</span>{" "}
@@ -20,32 +20,32 @@ const BookTable = () => {
               leo molestie vel, ornare non id blandit netus.
             </p>
             <form className="space-y-4">
-              <div className="grid grid-cols-2 gap-2">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
                 <input
                   type="text"
                   placeholder="Your Name *"
-                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white"
+                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white w-full"
                 />
                 <input
                   type="text"
                   placeholder="Your Email"
-                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white"
+                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white w-full"
                 />
                 <input
                   type="date"
                   placeholder="Reservation Date"
-                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none"
+                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none w-full"
                 />
                 <input
                   type="number"
                   placeholder="Total People"
-                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none"
+                  className="bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none w-full"
                 />
                 <textarea
                   name=""
                   id=""
                   placeholder="Message"
-                  className="h-40 resize-none col-span-2 bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none"
+                  className="h-40 resize-none w-full lg:col-span-2 bg-transparent border px-4 py-2 text-sm placeholder:text-white text-white outline-none"
                 ></textarea>
               </div>
               <PrimaryButton label={"Book now"} />

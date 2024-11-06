@@ -12,13 +12,13 @@ const About = () => {
   const [activeTab, setActiveTab] = useState(1);
 
   return (
-    <div className="py-10 relative">
+    <div className="p-10 lg:relative min-h-[600px]">
       <Container>
-        <div className="flex justify-between gap-2">
-          <div className="w-full">
+        <div className="flex flex-col lg:flex-row justify-between gap-6 lg:gap-2">
+          <div className="w-full relative">
             <img src={AboutImg} className="h-96 relative" alt="About banner" />
 
-            <div className="w-[200px] absolute top-16 ml-6 bg-white rounded-2xl flex justify-between items-center gap-2 p-2">
+            <div className="w-[200px] absolute top-6 ml-6 bg-white rounded-2xl flex justify-between items-center gap-2 p-2">
               <div
                 className="radial-progress text-[#FEBF00]"
                 style={{ "--value": 80 }}
@@ -105,7 +105,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex gap-6 lg:gap-10 my-10">
+        <div className="flex flex-col lg:flex-row  gap-y-6 lg:gap-10 my-10">
           <div className="flex items-center gap-4">
             <div className="bg-white shadow-lg h-16 w-16 rounded-full flex items-center justify-center border-b">
               <BsBoxSeam className="text-[#b72b1d] font-bold text-2xl" />
@@ -135,7 +135,7 @@ const About = () => {
           </div>
         </div>
       </Container>
-      <div className="absolute right-0 top-56">
+      <div className="hidden lg:flex lg:absolute right-0 top-56">
         <img src={AboutDish} className="h-72" alt="" />
       </div>
     </div>
