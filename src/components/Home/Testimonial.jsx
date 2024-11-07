@@ -26,16 +26,18 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="p-10 lg:relative ">
+    <div className="px-6 py-10 lg:relative ">
       <Container>
         <div className="min-h-[600px]">
-          <div className="text-primary flex items-center gap-1">
-            <span className="block"> ■</span>{" "}
-            <h4 className="font-bold text-lg">Crispy, Every Bite Taste</h4>
+          <div className="space-y-2">
+            <div className="text-primary flex items-center gap-1 font-roboto">
+              <span className="block"> ■</span>
+              <h4 className="font-bold text-lg">Crispy, Every Bite Taste</h4>
+            </div>
+            <h1 className="font-bebas tracking-wide uppercase text-4xl">
+              What Some of my Customers Say
+            </h1>
           </div>
-          <h1 className="font-bold uppercase text-2xl">
-            What Some of my Customers Say
-          </h1>
 
           <div className="relative my-8 min-h-[400px]">
             <Swiper
@@ -53,10 +55,10 @@ const Testimonial = () => {
             >
               <SwiperSlide>
                 <div className="flex flex-col-reverse lg:flex-row">
-                  <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
+                  <div className="w-full lg:w-1/3 bg-[#FEBF00] relative flex items-center justify-center">
                     <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                       <div className="relative">
-                        <h2 className="text-sm leading-6 tracking-wide text-start">
+                        <h2 className="text-sm leading-6 tracking-wide text-start font-roboto">
                           You can't go wrong with Chicken Mandi, I had it twice.
                           The chicken was cooked perfectly, juicy & soft
                           (usually mandi chicken is a bit dry). I would
@@ -70,10 +72,10 @@ const Testimonial = () => {
                       </div>
                       <div className="flex justify-between items-center">
                         <div className="text-start flex-1">
-                          <h1 className="text-sm font-semibold uppercase">
+                          <h1 className="text-lg font-bebas tracking-wide uppercase">
                             Khalid Al Dawsry
                           </h1>
-                          <h4 className="text-sm">Jeddah, Saudi</h4>
+                          <h4 className="text-sm font-roboto">Jeddah, Saudi</h4>
                           <div className="h-[0.5px] bg-black mt-1.5"></div>
                         </div>
                         <div>
@@ -117,7 +119,7 @@ const Testimonial = () => {
                   <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
                     <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                       <div className="relative">
-                        <h2 className="text-sm leading-6 tracking-wide text-start">
+                        <h2 className="text-sm leading-6 tracking-wide text-start font-roboto">
                           You can't go wrong with Chicken Mandi, I had it twice.
                           The chicken was cooked perfectly, juicy & soft
                           (usually mandi chicken is a bit dry). I would
@@ -131,10 +133,10 @@ const Testimonial = () => {
                       </div>
                       <div className="flex justify-between items-center">
                         <div className="text-start flex-1">
-                          <h1 className="text-sm font-semibold uppercase">
-                            Khalid Al Dawsry
+                          <h1 className="text-lg font-bebas tracking-wide uppercase">
+                            Salim Al Dawsry
                           </h1>
-                          <h4 className="text-sm">Jeddah, Saudi</h4>
+                          <h4 className="text-sm font-roboto">Abha, Saudi</h4>
                           <div className="h-[0.5px] bg-black mt-1.5"></div>
                         </div>
                         <div>
@@ -178,7 +180,7 @@ const Testimonial = () => {
                   <div className="w-full lg:w-1/3 bg-[#FEBF00] relative">
                     <div className="px-10 py-12 space-y-16 lg:space-y-28 max-w-md">
                       <div className="relative">
-                        <h2 className="text-sm leading-6 tracking-wide text-start">
+                        <h2 className="text-sm leading-6 tracking-wide text-start font-roboto">
                           You can't go wrong with Chicken Mandi, I had it twice.
                           The chicken was cooked perfectly, juicy & soft
                           (usually mandi chicken is a bit dry). I would
@@ -192,10 +194,10 @@ const Testimonial = () => {
                       </div>
                       <div className="flex justify-between items-center">
                         <div className="text-start flex-1">
-                          <h1 className="text-sm font-semibold uppercase">
-                            Khalid Al Dawsry
+                          <h1 className="text-lg font-bebas tracking-wide uppercase">
+                            Fasil Al Dawsry
                           </h1>
-                          <h4 className="text-sm">Jeddah, Saudi</h4>
+                          <h4 className="text-sm font-roboto">Al Ain, Saudi</h4>
                           <div className="h-[0.5px] bg-black mt-1.5"></div>
                         </div>
                         <div>
@@ -236,21 +238,23 @@ const Testimonial = () => {
               </SwiperSlide>
             </Swiper>
 
-            <div
-              className={`swiper-button-next-custom shadow-sm border absolute right-52 lg:-top-16 lg:right-2 z-10 mt-4 ${
-                activeNav === "next" ? "text-primary" : "text-black"
-              }`}
-              onClick={() => setActiveNav("next")}
-            >
-              <FaArrowRight />
-            </div>
-            <div
-              className={`swiper-button-prev-custom shadow-sm border absolute right-40 lg:-top-16 lg:right-12 z-10 mt-4 ${
-                activeNav === "prev" ? "text-primary" : "text-black"
-              }`}
-              onClick={() => setActiveNav("prev")}
-            >
-              <FaArrowLeft />
+            <div className="flex justify-center items-center gap-x-4">
+              <div
+                className={`swiper-button-next-custom shadow-sm border lg:absolute right-52 lg:-top-20 lg:right-2 z-10 mt-4 ${
+                  activeNav === "next" ? "text-primary" : "text-black"
+                }`}
+                onClick={() => setActiveNav("next")}
+              >
+                <FaArrowRight />
+              </div>
+              <div
+                className={`swiper-button-prev-custom shadow-sm border lg:absolute right-40 lg:-top-20 lg:right-12 z-10 mt-4 lg:mr-4 ${
+                  activeNav === "prev" ? "text-primary" : "text-black"
+                }`}
+                onClick={() => setActiveNav("prev")}
+              >
+                <FaArrowLeft />
+              </div>
             </div>
           </div>
           <div className="hidden lg:flex lg:absolute left-0 top-20">

@@ -14,28 +14,28 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center h-[80px] relative">
       <div className="flex gap-4">
-        <h1 className="flex items-center text-xl gap-2 font-semibold">
+        <h1 className="flex font-poppins items-center text-xl gap-2 font-semibold">
           <img src={Logo} alt="Logo" />
           Restaurant
         </h1>
 
-        <ul className="hidden lg:flex items-center gap-x-2 text-sm text-gray-200">
-          <li>
+        <ul className="hidden font-raleway lg:flex items-center gap-x-2 text-sm text-gray-200">
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">Home</a>
           </li>
-          <li>
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">About</a>
           </li>
-          <li>
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">Portfolio</a>
           </li>
-          <li>
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">Clients</a>
           </li>
-          <li>
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">Blog</a>
           </li>
-          <li>
+          <li className="py-2 hover:underline hover:underline-offset-4 transition-all duration-300">
             <a href="#">Contact</a>
           </li>
         </ul>

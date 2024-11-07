@@ -9,6 +9,14 @@ export default {
       backgroundColor: {
         primary: "#b72b1d",
       },
+      fontFamily: {
+        raleway: "'Raleway', sans-serif",
+        inter: "'Inter', sans-serif",
+        poppins: "'Poppins', sans-serif",
+        montserrat: "'Montserrat', sans-serif",
+        roboto: "'Roboto', sans-serif",
+        bebas: "'Bebas Neue', sans-serif",
+      },
     },
   },
   plugins: [require("daisyui")],
