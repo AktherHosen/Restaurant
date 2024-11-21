@@ -70,8 +70,8 @@ const Footer = () => {
             </div>
           </div>
           <h4 className="font-montserrat">
-            &copy; 2023{" "}
-            <span className="text-[#FEBF00] font-semibold">Niomax</span> All
+            &copy; 2024{" "}
+            <span className="text-[#FEBF00] font-semibold">Nowshad</span> All
             Rights Reserved
           </h4>
         </div>
